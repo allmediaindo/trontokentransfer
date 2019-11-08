@@ -8,11 +8,17 @@ For this script to work, you need to have the Tron iexbase PHP API, which in tur
 # Parameters
 Right now these are the parameters the script accepts (via GET or POST):
 
-key=
+key=SHOULD BE EQUAL TO THE ONE INSIDE THE SCRIPT
+
 wallet=ORIGIN_TRON_WALLET_ADDRESS
+
 walletpk=ORIGIN_ADDRESS_PK
+
 dest=DESTINATION_TRON_WALLET_ADDRESS
+
 amount=INTEGER EQUAL OR GREATER THAN 10
+
+
 
 (On some servers integers less than 10 make Tron API display an error, possibly due to floating number value inconsistencies. When it comes to tokens, they are divided by 100000 to convert to SUN)
 
