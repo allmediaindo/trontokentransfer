@@ -4,6 +4,19 @@ PHP source code to send Tron (TRC10) tokens, using the IEXBase PHP Library
 
 For this script to work, you need to have the Tron iexbase PHP API, which in turn requires to have PHP 7.1 or higher running on your server.
 
+
+# Parameters
+Right now these are the parameters the script accepts (via GET or POST):
+
+key=
+wallet=ORIGIN_TRON_WALLET_ADDRESS
+walletpk=ORIGIN_ADDRESS_PK
+dest=DESTINATION_TRON_WALLET_ADDRESS
+amount=INTEGER EQUAL OR GREATER THAN 10
+
+(On some servers integers less than 10 make Tron API display an error, possibly due to floating number value inconsistencies. When it comes to tokens, they are divided by 100000 to convert to SUN)
+
+
 # Setup Guide
 
 
